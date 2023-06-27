@@ -1,11 +1,64 @@
-html {
-    background-color: #fadadd;
+:root {
+    --background-color: #fadadd;
+
+    /* --text-color: #000080; F535AA 
+        box-shadow: 10px 5px 5px #26eed4f9;
+    */
+    
+    --text-color: #0000809f;
+
 }
 
-header {
-    color: #000080;
+* {
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+html {
+    background-color: var(--background-color);
 }
 
 h1 {
-    font-size: 36px;
+    display: flex;
+    font-size: 125%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 0;
+
+}
+
+.navHeader, .headerMenu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+
+}
+
+li, a {
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    padding: 10px 20px;
+    font-size: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    box-sizing: border-box;
+    width:fit-content;
+    border: solid 6px #ffffff;
+    padding: 7px;
+    font-size: 80%;
+}
+
+p {
+    font-size: 70%;
+}
+
+.aboutMe {
+
 }
