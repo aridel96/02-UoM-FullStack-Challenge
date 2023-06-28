@@ -1,10 +1,6 @@
 :root {
-    --background-color: #fadadd;
-
-    /* --text-color: #000080; F535AA 
-        box-shadow: 10px 5px 5px #26eed4f9;
-    */
-    
+    --background-color: #ffc6cc44;
+    --card-background: #ece1f1;
     --text-color: #0000809f;
 
 }
@@ -20,10 +16,10 @@ html {
 
 h1 {
     display: flex;
-    font-size: 125%;
+    font-size: 250%;
     justify-content: center;
-    align-items: flex-start;
     margin-bottom: 0;
+    margin-top: 12px;
 
 }
 
@@ -52,46 +48,44 @@ ul {
     padding: 10px 20px;
     font-size: 80%;
     flex-flow: row wrap;
-    /* justify-content: center; */
 }
 
 
 
 .container {
     box-sizing: border-box;
-    /* width: auto; */
-    border: solid 6px #ffffff;
-    margin: 10px 5px; 
+    border: solid 6px #dd6577;
+    margin: auto; 
     display: flex;
     flex-flow: row wrap;
-}
-#about {
-    width: fit-content;
+    justify-content: center;
 }
 
+#about {
+    width: 700px;
+    margin-top: 75px;
+    background-color: var(--card-background);
+}
+/* 
 #aboutMe {
     padding-left: 11px;                        /* Adds padding to the left of the about me paragrpah so that the content displays more centered on t */
     position: relative;
     bottom: 50px;
-}
+} */
 
 .subheader {
     display: flex;
 }
+
 h2 {
     display: flex;
-    /* box-sizing: border-box;
-    width:fit-content;
-    border: solid 6px #ffffff;
-    justify-content: flex-start;
-    align-items: flex-start; */
     padding: 7px;
     font-size: 80%;
     margin-top: 2px;
-    /* text-align: right; */
-    /* position: relative;
-    bottom: 25px;
-    right: -2px; */
+}
+
+#profilePic {
+    
 }
 
 p {
