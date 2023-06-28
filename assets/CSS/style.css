@@ -27,7 +27,7 @@ h1 {
 
 }
 
-.navHeader, .headerMenu {
+#navHeader, #headerMenu{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -38,27 +38,71 @@ h1 {
 li, a {
     display: flex;
     list-style-type: none;
-    flex-flow: row wrap;
-    padding: 10px 20px;
-    font-size: 90%;
 }
 
 a {
     text-decoration: none;
 }
 
-h2 {
+ul {
+    padding-inline-start: 0px;
+}
+
+.menuItem {
+    padding: 10px 20px;
+    font-size: 80%;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+}
+
+
+
+.container {
     box-sizing: border-box;
+    /* width: auto; */
+    border: solid 6px #ffffff;
+    margin: 10px 5px; 
+    display: flex;
+    flex-flow: row wrap;
+}
+#about {
+    width: fit-content;
+}
+
+#aboutMe {
+    padding-left: 11px;                        /* Adds padding to the left of the about me paragrpah so that the content displays more centered on t */
+    position: relative;
+    bottom: 50px;
+}
+
+.subheader {
+    display: flex;
+}
+h2 {
+    display: flex;
+    /* box-sizing: border-box;
     width:fit-content;
     border: solid 6px #ffffff;
+    justify-content: flex-start;
+    align-items: flex-start; */
     padding: 7px;
     font-size: 80%;
+    margin-top: 2px;
+    /* text-align: right; */
+    /* position: relative;
+    bottom: 25px;
+    right: -2px; */
 }
 
 p {
+    display: flex;
     font-size: 70%;
 }
 
-.aboutMe {
+#contact {
+   box-sizing: none; 
+}
 
+#navFooter, #footerMenu {
+    display: flex;
 }
