@@ -198,12 +198,30 @@ h3 {
     color: #000080d3;
 }
 
-#contact {
-   box-sizing: none; 
+
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    right: 0px;
 }
+
+
+
+#contact {
+    box-sizing: none; 
+    display: flex;
+    justify-content: flex-start;
+ }
 
 #navFooter, #footerMenu {
     display: flex;
+    justify-content: flex-end;
+}
+
+.footerItem {
+    font-size: 60%;
+    justify-content: space-around;
 }
 
 
