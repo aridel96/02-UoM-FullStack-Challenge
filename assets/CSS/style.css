@@ -2,6 +2,7 @@
     --background-color: #ffc6cc44;
     --card-background: #e3d1eb;
     --text-color: #0000809f;
+    --border-color: #dd6577;
 
 }
 
@@ -54,16 +55,14 @@ ul {
 
 .container {
     box-sizing: border-box;
-    border: solid 6px #dd6577;
+    border: solid 6px var(--border-color);
     margin: auto; 
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
 }
 
 .card {                                                             /*See README */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
     transition: 0.3s;
+    background-color: var(--card-background);
 }
 
 .card:hover {                                                       /*See README */
@@ -71,9 +70,11 @@ ul {
 }
 
 #about {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 700px;
     margin-top: 75px;
-    background-color: var(--card-background);
 }
 
 h2 {
@@ -97,13 +98,63 @@ h2 {
 #aboutMe {
   display: flex;
   padding: 0px 6px;
-  text-align: center;
   margin-top: 3px;
 } 
 
 p {
     display: flex;
-    font-size: 70%;
+    font-size: 63%;
+    text-align: center;
+    color: #000000;
+}
+
+#myWork {
+    margin-top: 50px;
+    width: 1369px;
+}
+
+#workHeading {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+h3 {
+    font-size: 73%;
+    text-align: center;
+}
+
+.project1 {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mainProject {
+    width: 1200px;
+    height: 500px;
+    border: solid 6px var(--border-color);
+    margin: auto;
+}
+
+.description {
+    display: none;
+    padding: 0px 9px;
+}
+
+.mainProject:hover > .description {
+    display: block;
+}
+.mainProject:hover {
+    height:820px;
+}
+
+#click-on-image {
+    font-size: 59%;
+    font-weight: bold;
+    color: #000080d3;
 }
 
 #contact {
@@ -113,9 +164,3 @@ p {
 #navFooter, #footerMenu {
     display: flex;
 }
-
-
-/* 
-padding-left: 11px;                        Adds padding to the left of the about me paragrpah so that the content displays more centered
-    position: relative;
-    bottom: 50px; */
