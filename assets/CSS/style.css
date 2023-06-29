@@ -1,6 +1,6 @@
 :root {
     --background-color: #ffc6cc44;
-    --card-background: #ece1f1;
+    --card-background: #e3d1eb;
     --text-color: #0000809f;
 
 }
@@ -61,20 +61,19 @@ ul {
     justify-content: center;
 }
 
+.card {                                                             /*See README */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+    transition: 0.3s;
+}
+
+.card:hover {                                                       /*See README */
+    box-shadow: 0 8px 16px 0 rgba(37, 139, 228, 0.915);
+}
+
 #about {
     width: 700px;
     margin-top: 75px;
     background-color: var(--card-background);
-}
-/* 
-#aboutMe {
-    padding-left: 11px;                        /* Adds padding to the left of the about me paragrpah so that the content displays more centered on t */
-    position: relative;
-    bottom: 50px;
-} */
-
-.subheader {
-    display: flex;
 }
 
 h2 {
@@ -85,8 +84,22 @@ h2 {
 }
 
 #profilePic {
-    
+   margin-top: 25px; 
 }
+
+#aboutHeading {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+ 
+#aboutMe {
+  display: flex;
+  padding: 0px 6px;
+  text-align: center;
+  margin-top: 3px;
+} 
 
 p {
     display: flex;
@@ -100,3 +113,9 @@ p {
 #navFooter, #footerMenu {
     display: flex;
 }
+
+
+/* 
+padding-left: 11px;                        Adds padding to the left of the about me paragrpah so that the content displays more centered
+    position: relative;
+    bottom: 50px; */
