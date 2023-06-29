@@ -63,6 +63,8 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
     transition: 0.3s;
     background-color: var(--card-background);
+    border: solid 6px var(--border-color);
+    margin: auto;
 }
 
 .card:hover {                                                       /*See README */
@@ -77,13 +79,6 @@ ul {
     margin-top: 75px;
 }
 
-h2 {
-    display: flex;
-    padding: 7px;
-    font-size: 80%;
-    margin-top: 2px;
-}
-
 #profilePic {
    margin-top: 25px; 
 }
@@ -93,6 +88,9 @@ h2 {
     justify-content: center;
     margin: 0px;
     padding: 0px;
+
+    font-size: 90%;
+    margin-top: 2px;
 }
  
 #aboutMe {
@@ -108,15 +106,22 @@ p {
     color: #000000;
 }
 
+
+
 #myWork {
     margin-top: 50px;
     width: 1369px;
+    border-color: transparent;
 }
 
 #workHeading {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: auto;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    font-size: 110%;
 }
 
 h3 {
@@ -124,7 +129,7 @@ h3 {
     text-align: center;
 }
 
-.project1 {
+#project1 {
     width: 800px;
     height: 400px;
     display: flex;
@@ -132,11 +137,27 @@ h3 {
     margin-top: 20px;
 }
 
+#projectImg {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#spotifyImg {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .mainProject {
     width: 1200px;
     height: 500px;
-    border: solid 6px var(--border-color);
-    margin: auto;
 }
 
 .description {
@@ -144,11 +165,31 @@ h3 {
     padding: 0px 9px;
 }
 
-.mainProject:hover > .description {
+/* .myProject {
+    
+} */
+
+.workRow {
+    display: flex;
+    flex-flow: row wrap;lay: 
+}
+.projectCard {
+    width: 600px;
+    height: 500px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px
+}
+
+.project:hover > .description {
     display: block;
 }
 .mainProject:hover {
     height:820px;
+}
+
+.myProject:hover {
+    height: 700px;
 }
 
 #click-on-image {
@@ -164,3 +205,6 @@ h3 {
 #navFooter, #footerMenu {
     display: flex;
 }
+
+
+
