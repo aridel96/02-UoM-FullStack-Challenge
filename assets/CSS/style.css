@@ -202,9 +202,8 @@ h3 {
     background-color: var(--card-background);
     display: flex;
     padding: 5px;
-    position: relative;
-    right: 30%;
-    left: 29%;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 
@@ -214,8 +213,6 @@ footer {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
-
 
 #contact {
     box-sizing: none; 
