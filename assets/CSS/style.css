@@ -165,14 +165,11 @@ h3 {
     padding: 0px 9px;
 }
 
-/* .myProject {
-    
-} */
-
 .workRow {
     display: flex;
-    flex-flow: row wrap;lay: 
+    flex-flow: row wrap; 
 }
+
 .projectCard {
     width: 600px;
     height: 500px;
@@ -184,6 +181,7 @@ h3 {
 .project:hover > .description {
     display: block;
 }
+
 .mainProject:hover {
     height:820px;
 }
@@ -198,12 +196,23 @@ h3 {
     color: #000080d3;
 }
 
+#moreWork {
+    width:fit-content;
+    border: solid 6px var(--border-color);
+    background-color: var(--card-background);
+    display: flex;
+    padding: 5px;
+    position: relative;
+    right: 30%;
+    left: 29%;
+}
+
 
 
 footer {
     display: flex;
     flex-flow: row wrap;
-    right: 0px;
+    justify-content: space-between;
 }
 
 
@@ -221,6 +230,7 @@ footer {
 
 .footerItem {
     font-size: 60%;
+    padding: 9px;
     justify-content: space-around;
 }
 
