@@ -1,8 +1,8 @@
 :root {
-    --background-color: #ffc6cc44;
-    --card-background: #e3d1eb;
+    --background-color: #FFE1F9;
+    --card-background: #e4c0f3;
     --text-color: #0000809f;
-    --border-color: #dd6577;
+    --border-color: #b3205d;
 
 }
 
@@ -137,18 +137,9 @@ h3 {
     margin-top: 20px;
 }
 
-#projectImg {
+.projectImg {
     width: 400px;
     height: 400px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    margin-top: 20px;
-}
-
-#spotifyImg {
-    width: 600px;
-    height: 600px;
     display: flex;
     flex-flow: row wrap;
     margin: auto;
@@ -232,3 +223,91 @@ footer {
 }
 
 
+
+@media screen and (max-width: 425px) {
+    header {
+        display: flex;
+    }
+
+    h1 {
+        flex: 0 0 100%
+    }
+
+    #about {
+        width: 96%;
+        height: auto;
+        justify-content: center;
+    }
+
+    #profilePic {
+        width: 85%;
+        height: auto;
+        margin-left: 7%;
+    }
+
+
+    
+    #myWork {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainProject {
+        width: 96%;
+        height: auto;
+    }
+
+    #project1 {
+        width: 96%;
+        height: auto;
+    }
+
+    .projectCard {
+        width: 96%;
+        height: auto;
+    }
+
+    .projectImg {
+        width: 80%;
+        height: auto;
+    }
+
+    #moreWork {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+/* 
+
+
+body {
+    width: fit-content;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h1 {
+    flex: 0 0 100%;
+    /* justify-content: center;
+    width: fit-content; */
+}
+
+#navHeader, headerMenu {
+    /* justify-content: center; */
+    flex: 0 0 100%;
+} */
+
+
+#about {
+    width: 800%;
+    height: auto;
+    margin: 0px;
+} */
