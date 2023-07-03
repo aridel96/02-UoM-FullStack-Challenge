@@ -24,6 +24,10 @@ h1 {
 
 }
 
+.dropdown-menu {
+    display: none;
+}
+
 #navHeader, #headerMenu{
     display: flex;
     justify-content: center;
@@ -227,10 +231,44 @@ footer {
 @media screen and (max-width: 425px) {
     header {
         display: flex;
+        flex-direction: column;
     }
 
     h1 {
-        flex: 0 0 100%
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #navHeader {
+        flex-direction: column;
+    }
+
+    #headerMenu {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdown-menu:hover + #headerMenu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 396px;
+        border: solid 6px var(--border-color);
+        margin: auto; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+        transition: 0.3s;
+        background-color: var(--card-background);
+    }    
+   
+    .menu:hover {                                                       /*See README */
+        box-shadow: 0 8px 16px 0 rgba(37, 139, 228, 0.915);
     }
 
     #about {
@@ -244,8 +282,6 @@ footer {
         height: auto;
         margin-left: 7%;
     }
-
-
     
     #myWork {
         width: 100%;
@@ -272,42 +308,48 @@ footer {
         height: auto;
     }
 
+    footer {
+        flex-flow: column;
+    }
+
+    #contact {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    #navFooter {
+        display: none;
+    }
+
+    #footerMenu {
+        flex-direction: column;
+    }
+
+    .menu:hover > #contact {
+        margin-bottom: 6px;
+    }
+
+    .menu:hover > #navFooter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerMenu {
+        margin-top: 2px;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
     #moreWork {
-        width: 300px;
+        width:auto;
+        border: solid 6px transparent;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 96px;
+
     }
 }
 
 
-
-
-
-
-/* 
-
-
-body {
-    width: fit-content;
-}
-
-header {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-h1 {
-    flex: 0 0 100%;
-    /* justify-content: center;
-    width: fit-content; */
-}
-
-#navHeader, headerMenu {
-    /* justify-content: center; */
-    flex: 0 0 100%;
-} */
-
-
-#about {
-    width: 800%;
-    height: auto;
-    margin: 0px;
-} */
