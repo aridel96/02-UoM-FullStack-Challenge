@@ -1,8 +1,8 @@
 :root {
-    --background-color: #ffc6cc44;
-    --card-background: #e3d1eb;
+    --background-color: #FFE1F9;
+    --card-background: #e4c0f3;
     --text-color: #0000809f;
-    --border-color: #dd6577;
+    --border-color: #b3205d;
 
 }
 
@@ -22,6 +22,10 @@ h1 {
     margin-bottom: 0;
     margin-top: 12px;
 
+}
+
+.dropdown-menu {
+    display: none;
 }
 
 #navHeader, #headerMenu{
@@ -137,18 +141,9 @@ h3 {
     margin-top: 20px;
 }
 
-#projectImg {
+.projectImg {
     width: 400px;
     height: 400px;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    margin-top: 20px;
-}
-
-#spotifyImg {
-    width: 600px;
-    height: 600px;
     display: flex;
     flex-flow: row wrap;
     margin: auto;
@@ -214,15 +209,21 @@ footer {
     justify-content: space-between;
 }
 
+.menu {
+    display: flex;
+}
+
 #contact {
     box-sizing: none; 
     display: flex;
     justify-content: flex-start;
+    flex: 0 0 100%;
  }
 
 #navFooter, #footerMenu {
     display: flex;
     justify-content: flex-end;
+    flex: 0 0 100%;
 }
 
 .footerItem {
@@ -232,3 +233,244 @@ footer {
 }
 
 
+
+
+
+
+@media screen and (max-width: 768px) {                     /*Google Dev Tools has 768px for a tablet*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #navHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headerMenu {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
+    .dropdown-menu:hover + #headerMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {                                                            /*See README */
+        width: 736px;
+        border: solid 6px var(--border-color);
+        margin: auto; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+        transition: 0.3s;
+        background-color: var(--card-background);
+    }    
+   
+    .menu:hover {                                                       /*See README */
+        box-shadow: 0 8px 16px 0 rgba(37, 139, 228, 0.915);
+    }
+
+    #about {
+        width: 96%;
+        height: auto;
+        justify-content: center;
+    }
+
+    #profilePic {
+        width: 85%;
+        height: auto;
+        margin-left: 7%;
+    }
+    
+    #myWork {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainProject, #project1, .projectCard {
+        width: 96%;
+        height: auto;
+    }
+
+    .projectImg {
+        width: 80%;
+        height: auto;
+    }
+
+    footer {
+        flex-flow: column;
+    }
+
+    #contact {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    #navFooter {
+        display: none;
+    }
+
+    #footerMenu {
+        flex-direction: column;
+    }
+
+    .menu:hover > #contact {
+        margin-bottom: 6px;
+    }
+
+    .menu:hover > #navFooter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerMenu {
+        margin-top: 2px;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
+    #moreWork {
+        width:auto;
+        border: solid 6px transparent;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 136px;
+        padding: 0 10.5%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 425px) {                 /*Google Dev Tools has 425px for a large phone*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #navHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headerMenu {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
+    .dropdown-menu:hover + #headerMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {                                                            /*See README */
+        width: 396px;
+        border: solid 6px var(--border-color);
+        margin: auto; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+        transition: 0.3s;
+        background-color: var(--card-background);
+    }    
+   
+    .menu:hover {                                                       /*See README */
+        box-shadow: 0 8px 16px 0 rgba(37, 139, 228, 0.915);
+    }
+
+    #about {
+        width: 96%;
+        height: auto;
+        justify-content: center;
+    }
+
+    #profilePic {
+        width: 85%;
+        height: auto;
+        margin-left: 7%;
+    }
+    
+    #myWork {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainProject, #project1, .projectCard {
+        width: 96%;
+        height: auto;
+    }
+
+    .projectImg {
+        width: 80%;
+        height: auto;
+    }
+
+    footer {
+        flex-flow: column;
+    }
+
+    #contact {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    #navFooter {
+        display: none;
+    }
+
+    #footerMenu {
+        flex-direction: column;
+    }
+
+    .menu:hover > #contact {
+        margin-bottom: 6px;
+    }
+
+    .menu:hover > #navFooter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerMenu {
+        margin-top: 2px;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
+    #moreWork {
+        width:auto;
+        border: solid 6px transparent;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 96px;
+        padding: 0 10.5%;
+
+    }
+}
