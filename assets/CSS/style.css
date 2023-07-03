@@ -209,15 +209,21 @@ footer {
     justify-content: space-between;
 }
 
+.menu {
+    display: flex;
+}
+
 #contact {
     box-sizing: none; 
     display: flex;
     justify-content: flex-start;
+    flex: 0 0 100%;
  }
 
 #navFooter, #footerMenu {
     display: flex;
     justify-content: flex-end;
+    flex: 0 0 100%;
 }
 
 .footerItem {
@@ -231,7 +237,128 @@ footer {
 
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {                     /*Google Dev Tools has 768px for a tablet*/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #navHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #headerMenu {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9px;
+    }
+
+    .dropdown-menu:hover + #headerMenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {                                                            /*See README */
+        width: 736px;
+        border: solid 6px var(--border-color);
+        margin: auto; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.274);
+        transition: 0.3s;
+        background-color: var(--card-background);
+    }    
+   
+    .menu:hover {                                                       /*See README */
+        box-shadow: 0 8px 16px 0 rgba(37, 139, 228, 0.915);
+    }
+
+    #about {
+        width: 96%;
+        height: auto;
+        justify-content: center;
+    }
+
+    #profilePic {
+        width: 85%;
+        height: auto;
+        margin-left: 7%;
+    }
+    
+    #myWork {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainProject, #project1, .projectCard {
+        width: 96%;
+        height: auto;
+    }
+
+    .projectImg {
+        width: 80%;
+        height: auto;
+    }
+
+    footer {
+        flex-flow: column;
+    }
+
+    #contact {
+        padding: 5px;
+        justify-content: center;
+    }
+
+    #navFooter {
+        display: none;
+    }
+
+    #footerMenu {
+        flex-direction: column;
+    }
+
+    .menu:hover > #contact {
+        margin-bottom: 6px;
+    }
+
+    .menu:hover > #navFooter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerMenu {
+        margin-top: 2px;
+    }
+
+    .item {
+        justify-content: center;
+    }
+
+    #moreWork {
+        width:auto;
+        border: solid 6px transparent;
+        background-color: transparent;
+        box-shadow: none;
+        margin-bottom: 136px;
+        padding: 0 10.5%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 425px) {                 /*Google Dev Tools has 425px for a large phone*/
     header {
         display: flex;
         flex-direction: column;
@@ -293,17 +420,7 @@ footer {
         height: auto;
     }
 
-    .mainProject {
-        width: 96%;
-        height: auto;
-    }
-
-    #project1 {
-        width: 96%;
-        height: auto;
-    }
-
-    .projectCard {
+    .mainProject, #project1, .projectCard {
         width: 96%;
         height: auto;
     }
@@ -353,8 +470,7 @@ footer {
         background-color: transparent;
         box-shadow: none;
         margin-bottom: 96px;
+        padding: 0 10.5%;
 
     }
 }
-
-
