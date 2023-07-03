@@ -10,7 +10,7 @@ Through this project I had the opportunity to learn more and develop my skills o
 ## Code Source
     * index meta viewport: https://www.w3schools.com/css/css_rwd_viewport.asp
 
-    * container and card class and card:hover pseudoclass: https://www.w3schools.com/howto/howto_css_cards.asp
+    * container and card class, card:hover pseudoclass, menu class, menu:hover psuedoclass: https://www.w3schools.com/howto/howto_css_cards.asp
     
 
 ### License
