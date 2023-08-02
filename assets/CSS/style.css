@@ -150,6 +150,15 @@ h3 {
     margin-top: 20px;
 }
 
+.siteImg {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .mainProject {
     width: 1200px;
     height: 500px;
@@ -182,7 +191,7 @@ h3 {
 }
 
 .myProject:hover {
-    height: 700px;
+    height: 850px;
 }
 
 #click-on-image {
